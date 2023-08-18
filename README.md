@@ -14,7 +14,7 @@ export GRAFANA_INSTANCE_ID="your-grafana-instance-id"
 export TOKEN="your-grafana-cloud-access-token"
 export OTEL_EXPORTER_OTLP_PROTOCOL="http/protobuf"
 export OTEL_EXPORTER_OTLP_ENDPOINT="https://otlp-gateway-your-region-0.grafana.net/otlp"
-export OTEL_EXPORTER_OTLP_HEADERS="Authorization=Basic $(echo -n $GRAFANA_INSTANCE_ID:$TOKEN | base64 -w 0)"`;
+export OTEL_EXPORTER_OTLP_HEADERS="Authorization=Basic $(echo -n $GRAFANA_INSTANCE_ID:$TOKEN | base64 -w 0)";
 ```
 * `GRAFANA_INSTANCE_ID` refers to the instance ID of your stack. You can view this in the details section of your Grafana instance
 * `TOKEN` refers to the secret-key/token for a cloud access policy with the `:write` permission for the type of data you want to forward (metrics, traces, and/or logs). These are essentially the same tokens used for agent-based integrations
