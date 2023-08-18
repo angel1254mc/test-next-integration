@@ -26,3 +26,5 @@ Finally, you can run the development server:
 ```bash
 npm run dev
 ```
+
+Then, you can interact with the app and see your traces + metrics + logs show on your Grafana Cloud instance 🥳. You can filter by service_name="test_next_app" to narrow down to data produced by this sample app.
